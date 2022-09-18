@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title></title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+<!--
+Verticard Template
+https://templatemo.com/tm-533-verticard
+
+Template re-distribution is NOT allowed on any kind of download website. Thank you.
+
+-->
+</head>
+
+<body>
+    <div class="tm-page-container mx-auto">
+        <header class="tm-header text-center">
+            <h1 class="tm-title text-uppercase">Penurunan Sifat</h1>
+            <p class="tm-primary-color"></i></p>
+        </header>
+
+        <section class="tm-section">
+            <nav class="tm-nav">
+                <ul>
+                    <li>
+                        <a href="index.html"><span class="tm-nav-deco"></span>Intro</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html"><span class="tm-nav-deco"></span>Tentang</a>
+                    </li>
+                    <li class="active">
+                        <a href="contact.html"><span class="tm-nav-deco"></span>Kontak</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="tm-content-container">
+                <div class="mb-0 tm-img-overlay-wrap">
+                    <div class="tm-img-overlay"></div>
+                    <div class="tm-img-overlay-text text-white p-5">
+                        <h4 class="mb-4">Kritik dan Saran</h4>
+                        <p class="tm-small">
+                            Kritik Dan Saran Anda sangat membantu kami untuk Memperbaiki kesalahan pada makalah ini terutama kritik dan saran yang membangun.
+                        </p>
+                    </div>
+                </div>
+                <div class="tm-content">
+                  
+                        <div class="form-group">
+                            <input type="text" id="name" name="contact_name"
+                                class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
+                                placeholder="Nama" required="" />
+                        </div>
+                     
+
+                        <div class="form-group">
+                            <textarea rows="6" id="cont" name="contact_message"
+                                class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
+                                placeholder="Kritik&Saran..." required=""></textarea>
+                        </div>
+
+                        <div class="form-group text-right">
+                            <button class="btn btn-primary rounded-0"onclick="dc()">
+                              Kirim
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <span>MakalahIpa@2022</span>
+            <span></span>
+        </footer>
+    </div>
+  <script>
+    function dc(){
+      var m=document.getElementById("cont").value
+      var k=document.getElementById("name").value
+      window.open("https://api.whatsapp.com/send?phone=6282282422436&text=Halo saya :"+k+",dan ini kritik maupun saran saya Untuk makalah ipanya :"+m)
+    }
+  </script>
+</body>
+
+</html>
